@@ -1,47 +1,74 @@
 body {
     font-family:Georgia;
 }
+html,body{
+  height: 100%;
+}
+header {
 
+  background-image: url("../images/graffiti_banner.jpg");
+  background-size: contain;
+  height: 300px;
+  width: 100vw;
+}
 h1 {
     font-size: 25px;
     font-family: 'Special Elite', serif;
   	font-size: 48px;
+    margin: 25px 25px 25px 25px;
+
   	/*text-shadow: 4px 4px 4px #aaa;*/
 }
 }
-h2 {
-    font-size: 30px;
+h2{
+  font-size: 100px;
+}
+h3{
+  font-size: 48px;
+  margin: 15px 5px 15px 15px;
 }
 ul {
     list-style:none;
 }
-nav{
-	margin: 5px 5px 5px 0px;
-}
 nav ul {
-    text-transform: uppercase;
-    color: white;
-    list-style-type: none;
-  	margin: 0;
- 	padding: 5px 5px 5px 5px;
- 	width: 200px;
-  	background-color: #f1f1f1;
-
-}
-li a{
-	color: black;
-}
-li a:hover{
-	color: red;
-}
-li a:visited{
-	color: gray;
+  text-transform: uppercase;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 header p{
 	color: black;
 }
+nav li {
+  float: left;
+}
 
-
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.active {
+  background-color: #4CAF50;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+main p{
+  margin: 15px 5px 15px 15px;
+}
+main ul{
+  margin: 15px 5px 15px 15px;
+}
+main img{
+  margin: 15px 5px 15px 15px;
+}
 .offpage {
     position: absolute;
     left: -1000px;
@@ -64,7 +91,7 @@ header p{
   display: flex;
   
   -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   /*background: white;*/
@@ -90,10 +117,11 @@ body,html {
 }
 
 .wrapper {
+  width: 100vw;
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-column-gap: 0.3125em;
+  grid-row-gap: 0.3125em;
  
 }
 
@@ -110,20 +138,16 @@ body,html {
 }
 
 img.galleryitem{
-	width: 300px;
+	width: 75%;
 
 }
 div.flex-container img{
-	width: 100px;
+	width: 100%;
 }
 div.flex-container p{
 	background-color: white;
 }
-header {
 
- 	background-image: url("../images/graffiti_banner.jpg");
- 	height: 300px;
-}
 
 
 
